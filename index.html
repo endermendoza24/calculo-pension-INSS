@@ -9,7 +9,10 @@
 </head>
 <body>
     <div class="container">
+        
         <form action="">
+            <h2>Calculadora pensión INSS Nicaragua</h2>
+            
             <label for="salario">Ingresa tu promedio salarial</label>
             <input type="number" min="0" required placeholder="Salario" name="salario" id="salario" class="form-control">
             <label for="semanas">Ingresa tus semanas cotizadas</label>
@@ -17,6 +20,7 @@
 
             <label for="" id="pension" class="pension"></label>
             <button class="btn-submit" onclick="onClickPension()" type="button">Calcular</button>            
+            <p class="alert">*Actualizada con la reforma de 2019</p>
         </form>
     </div>
     <script src="./main.js"></script>
