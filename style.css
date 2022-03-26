@@ -36,7 +36,10 @@ form{
     width: 40%;
     border-radius: 10px;
     box-shadow: 10px 10px 10px var(--deg);
-    
+    transition: ease-in-out .6s;
+}
+form:hover{
+    transform: scale(1.04);
 }
 form label{
     font-size: var(--lg);
