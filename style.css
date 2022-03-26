@@ -1,0 +1,80 @@
+:root{
+    --background:#DCC3FE;
+    --principal:#EFEFEF;
+    --secondary:#61F3E0;
+    --third:#FEF9F9;
+    --deg:#00000033;
+    --black:#000;
+    --white:#ffF;
+    --lg:1.4rem;
+    --md:1.2rem;
+    --sm:1rem;
+    --fuente:'Roboto',sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+body{
+    background-color: var(--background);
+}
+.container{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--principal);
+    padding:30px;
+    line-height: 30px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px var(--deg);
+    
+}
+form label{
+    font-size: var(--lg);
+    text-align: center;
+    font-weight: bolder;
+}
+form input{
+    height: 60px;
+    margin: 20px 0;
+    background-color: var(--third);
+    border: 1px solid var(--black);
+    outline: 0;
+    border-radius: 10px;
+    font-size: var(--md);
+    padding-left:10px;
+}
+form .pension{
+    font-size: var(--sm);
+    font-weight: 500;
+
+}
+form button{
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--lg);
+    font-weight: bolder;
+    border: 1px solid var(--black);
+    
+}
+form button:active{
+    background-color: #15a18f;
+}
+
+@media  (max-width:600px) {
+    form{
+        width:90%;
+    }
+}
