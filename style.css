@@ -80,7 +80,7 @@ form button{
     
 }
 form button:active{
-    background-color: #15a18f;
+    background-color: var(--secondary);
 }
 form .alert{
     color: var(--red);

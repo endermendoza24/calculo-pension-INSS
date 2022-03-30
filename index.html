@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/inss.ico" type="image/x-icon">
     <title>Cálculo pensión INSS</title>
 </head>
 <body>
@@ -14,13 +15,13 @@
             <h2>Calculadora pensión INSS Nicaragua</h2>
             
             <label for="salario">Ingresa tu promedio salarial</label>
-            <input type="number" min="0" required placeholder="Salario" name="salario" id="salario" class="form-control">
+            <input type="number" min="0"  placeholder="Salario" required name="salario" id="salario" class="form-control">
             <label for="semanas">Ingresa tus semanas cotizadas</label>
             <input type="number" name="semanas" id="semanas" required min="0" placeholder="Semanas" class="form-control">
 
             <label for="" id="pension" class="pension"></label>
             <button class="btn-submit" onclick="onClickPension()" type="button">Calcular</button>            
-            <p class="alert">*Actualizada con la reforma de 2019</p>
+            <p class="alert">*Actualizada con la reforma al INSS de 2019</p>
         </form>
     </div>
     <script src="./main.js"></script>
