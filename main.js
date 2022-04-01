@@ -1,3 +1,6 @@
+// archivo deprecado...
+
+
 const calcularPension = (promedioSalario = 0, semanasCotizadas = 0) =>{
     const factorBasico = 0.20;
     const factorAplicacion = 0.010;
@@ -16,7 +19,7 @@ const calcularPension = (promedioSalario = 0, semanasCotizadas = 0) =>{
         }else if(semanasCotizadas >= 650 && semanasCotizadas < 750){
             return 'Usted puede optar a una pensión minima de: <div style="color:red"><strong>C$ 3,656</strong></div>'
         }else{
-            return '<b>Lo sentimos, las semanas que usted cotizó no son suficnetes para optar a una pensión de vejez ni a pensión reducida</b>';
+            return '<b>Lo sentimos, las semanas que usted cotizó no son suficnetes para optar a una pensión de vejez ni a pensión reducida</b><br> <b>Se necesitan 250 semanas como mínimo</b>';
         }
     }else{
         if(semanasCotizadas >= 750){
@@ -26,17 +29,17 @@ const calcularPension = (promedioSalario = 0, semanasCotizadas = 0) =>{
             let tasaReemplazo = factorAnual + factorBasico;
             let pension = tasaReemplazo * promedioSalario;
             
-            // que no sea menor de 5000
+            //que no sea menor de 5000
         
             if(pension < 5000){
                 pension = 5000;
             }else if(pension >= 53811.56){
                 pension = 53811.56
             }
-        
+
             return `Usted obtuvo el <span style="color:red; font-weight:bolder;">${(tasaReemplazo*100).toFixed(2)}%</span> de su salario <br> Su pensión es de: <span style="color:red;font-weight:bolder">C$ ${pension.toFixed(2)}</<span>`; 
         }else{
-            return '<strong>La cantidad de semanas cotizadas no es suficiente para aplicar a una pensión</strong>';
+            return '<strong>La cantidad mínima para obtener una pensión es de 250 semanas</strong>';
         }
     }
 }
